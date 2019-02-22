@@ -1,0 +1,40 @@
+body {
+    background: #003366;
+}
+
+.center {
+    display: table;
+    margin: 0 auto 0;
+}
+
+.box {
+    background: #00274f;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.boxedicon {
+    cursor: pointer;
+    margin: 6px 3px 3px 6px;
+    max-height: 42px;
+    max-width: 42px;
+}
+
+.boxedicon:hover {
+    background: #003366;
+    margin: 4px 1px 1px 4px;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+#url {
+    color: #8ec6d3;
+    cursor: default;
+    text-shadow: #67909C;
+    font-family: 'Fira Mono', monospace;
+    font-size: 72px;
+}
+
+#icons {
+    margin-top: 7%;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="img/controller.gif">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+    <script src="common.js"></script>
+
+    <title>kaleidox.de</title>
+</head>
+<body onload="pageLoad()">
+<div class="center" style="margin: 13% auto 0;">
+    <div class="box" id="url" onclick="xredirect()">kaleidox.de</div>
+    <br/>
+    <div class="box" id="icons">
+        <div class="center">
+            <img class="boxedicon" src="img/github.png" alt="GitHub" onclick="changeurl('github')">
+            <img class="boxedicon" src="img/twitter.png" alt="Twitter" onclick="changeurl('twitter')">
+            <img class="boxedicon" src="img/discord.png" alt="Discord" onclick="changeurl('discord')">
+            <img class="boxedicon" src="img/snapchat.png" alt="Snapchat"
+                 onclick="changemajor('Snapchat: kaleidox_', null)">
+            <img class="boxedicon" src="img/steam.ico" alt="Steam" onclick="changeurl('steam')">
+            <img class="boxedicon" src="img/playstation.png" alt="PlayStation Network"
+                 onclick="changemajor('PSN: kaleidox_', 'https://my.playstation.com/profile/kaleidox_')">
+            <img class="boxedicon" src="img/instagram.png" alt="Instagram" onclick="changeurl('instagram')">
+        </div>
+    </div>
+</div>
+</body>
