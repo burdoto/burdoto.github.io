@@ -76,3 +76,19 @@ body {
     display: table;
     margin: 5% auto auto auto;
 }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    color: #003366;
+    background: #00274f;
+    padding-top: 3px;
+    border-style: solid;
+    border-color: #001937;
+    border-width: 1px;
+    border-bottom-width: 0;
+    border-radius: 2px 2px 0 0;
+    text-align: center;
+    font-family: 'Fira Mono', monospace;
+}
