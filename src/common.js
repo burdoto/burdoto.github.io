@@ -1,30 +1,37 @@
 var redirect = null;
+var changeident = null;
 
 function changeurl(ident) {
-    var urlVisual = document.getElementById("url");
+    if (changeident !== ident) {
+        var urlVisual = document.getElementById("url");
 
-    redirect = "http://" + ident + ".kaleidox.de/";
-    urlVisual.style.cursor = "pointer";
-    urlVisual.textContent = ident + ".kaleidox.de";
+        redirect = "http://" + ident + ".kaleidox.de/";
 
-    urlVisual.style.color = "#8ec6d3";
-    urlVisual.style.textShadow = "#67909C";
+        urlVisual.style.cursor = "pointer";
+        urlVisual.textContent = ident + ".kaleidox.de";
+        urlVisual.style.color = "#8ec6d3";
+        urlVisual.style.textShadow = "#67909C";
 
+        changeident = ident;
+    } else xredirect()
 }
 
 function changemajor(changeto, url) {
-    var urlVisual = document.getElementById("url");
+    if (changeident !== changeto) {
+        var urlVisual = document.getElementById("url");
 
-    redirect = url;
-    if (url != null) {
-        urlVisual.style.cursor = "pointer"
-    } else {
-        urlVisual.style.cursor = "default"
-    }
-    urlVisual.textContent = changeto;
+        redirect = url;
+        if (url != null) {
+            urlVisual.style.cursor = "pointer"
+        } else {
+            urlVisual.style.cursor = "default"
+        }
+        urlVisual.textContent = changeto;
+        urlVisual.style.color = "#8ec6d3";
+        urlVisual.style.textShadow = "#67909C";
 
-    urlVisual.style.color = "#8ec6d3";
-    urlVisual.style.textShadow = "#67909C";
+        changeident = changeto;
+    } else xredirect();
 }
 
 function xredirect() {

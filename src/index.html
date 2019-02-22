@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <link rel="icon" href="img/controller.gif">
-    <link rel="stylesheet" href="style.css">
+    <link href="img/controller.gif" rel="icon">
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
 
     <script src="common.js"></script>
@@ -10,7 +10,9 @@
 </head>
 <body onload="pageLoad()">
 <div style="margin: 8% auto auto">
-    <div class="widebox" id="url" onclick="xredirect()">kaleidox.de</div>
+    <div class="widebox" id="url" onclick="xredirect()" title="Hint: Doubleclicking an icon redirects the page!">
+        kaleidox.de
+    </div>
     <br/>
     <div id="profiles" title="Social Media Profiles">
         <div class="box">
@@ -25,7 +27,8 @@
                      onclick="changemajor('Snapchat: kaleidox_', null)">
                 <img class="profileicon" src="img/socialmedia/steam.ico" alt="Steam" title="Steam"
                      onclick="changeurl('steam')">
-                <img class="profileicon" src="img/socialmedia/playstation.png" alt="PlayStation Network" title="PlayStation Network"
+                <img class="profileicon" src="img/socialmedia/playstation.png" alt="PlayStation Network"
+                     title="PlayStation Network"
                      onclick="changemajor('PSN: kaleidox_', 'https://my.playstation.com/profile/kaleidox_')">
                 <img class="profileicon" src="img/socialmedia/instagram.png" alt="Instagram" title="Instagram"
                      onclick="changeurl('instagram')">
