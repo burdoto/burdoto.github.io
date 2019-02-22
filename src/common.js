@@ -56,5 +56,4 @@ function pageLoad() {
             changemajor("www.kaleidox.de", null);
             break;
     }
-
 }

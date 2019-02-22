@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="img/controller.gif">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+    <title>kaleidox.de - 404</title>
+
+    <script type="javascript">
+        function onLoad() {
+            var sub = window.location.pathname;
+            var brkDot = sub.indexOf(".");
+            var brkSls = sub.indexOf("/");
+            var brk;
+
+            if (brkDot < brkSls) brk = brkDot; else brk = brkSls;
+
+            window.location.href = "www.kaleidox.de/#" + sub.substr(0, brk);
+        }
+    </script>
+</head>
+<body onload="onLoad()">
+</body>
