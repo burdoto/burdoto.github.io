@@ -3,8 +3,7 @@ body {
 }
 
 .center {
-    display: flex;
-    margin: 0 auto 0;
+    margin: auto;
 }
 
 .widebox {
@@ -26,7 +25,7 @@ body {
     padding: 10px;
 }
 
-.boxedicon {
+.profileicon {
     cursor: pointer;
     background: #00274f;
     margin: 8px;
@@ -36,11 +35,28 @@ body {
     max-width: 42px;
 }
 
-.boxedicon:hover {
+.profileicon:hover {
     background: #003366;
     margin: 8px;
     padding: 12px;
     border-radius: 6px;
+}
+
+.projecticon {
+    cursor: pointer;
+    background: #00274f;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.projecticon:hover {
+    background: #003366;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 4px;
 }
 
 #url {
@@ -51,7 +67,12 @@ body {
     font-size: 72px;
 }
 
-#icons {
+#profiles {
+    display: table;
+    margin: 5% auto auto auto;
+}
+
+#projects {
     display: table;
     margin: 5% auto auto auto;
 }

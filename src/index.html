@@ -9,21 +9,40 @@
     <title>kaleidox.de</title>
 </head>
 <body onload="pageLoad()">
-<div style="margin: 13% auto 0;">
+<div style="margin: 8% auto auto">
     <div class="widebox" id="url" onclick="xredirect()">kaleidox.de</div>
     <br/>
-    <div id="icons">
+    <div id="profiles" title="Social Media Profiles">
         <div class="box">
             <div class="center">
-                <img class="boxedicon" src="img/github.png" alt="GitHub" onclick="changeurl('github')">
-                <img class="boxedicon" src="img/twitter.png" alt="Twitter" onclick="changeurl('twitter')">
-                <img class="boxedicon" src="img/discord.png" alt="Discord" onclick="changeurl('discord')">
-                <img class="boxedicon" src="img/snapchat.png" alt="Snapchat"
+                <img class="profileicon" src="img/socialmedia/github.png" alt="GitHub" title="GitHub"
+                     onclick="changeurl('github')">
+                <img class="profileicon" src="img/socialmedia/twitter.png" alt="Twitter" title="Twitter"
+                     onclick="changeurl('twitter')">
+                <img class="profileicon" src="img/socialmedia/discord.png" alt="Discord" title="Discord"
+                     onclick="changeurl('discord')">
+                <img class="profileicon" src="img/socialmedia/snapchat.png" alt="Snapchat" title="Snapchat"
                      onclick="changemajor('Snapchat: kaleidox_', null)">
-                <img class="boxedicon" src="img/steam.ico" alt="Steam" onclick="changeurl('steam')">
-                <img class="boxedicon" src="img/playstation.png" alt="PlayStation Network"
+                <img class="profileicon" src="img/socialmedia/steam.ico" alt="Steam" title="Steam"
+                     onclick="changeurl('steam')">
+                <img class="profileicon" src="img/socialmedia/playstation.png" alt="PlayStation Network" title="PlayStation Network"
                      onclick="changemajor('PSN: kaleidox_', 'https://my.playstation.com/profile/kaleidox_')">
-                <img class="boxedicon" src="img/instagram.png" alt="Instagram" onclick="changeurl('instagram')">
+                <img class="profileicon" src="img/socialmedia/instagram.png" alt="Instagram" title="Instagram"
+                     onclick="changeurl('instagram')">
+            </div>
+        </div>
+    </div>
+    <div id="projects" style="margin: 2% auto auto" title="Projects">
+        <div class="box">
+            <div class="center">
+                <img class="projecticon" src="img/projects/crystalshard.png" alt="CrystalShard" title="CrystalShard"
+                     onclick="changemajor('CrystalShard', 'https://github.com/CrystalShardDiscord/CrystalShard')">
+                <img class="projecticon" src="img/projects/animal-musix.png" alt="AnimalMusix" title="AnimalMusix"
+                     onclick="changemajor('AnimalMusix', 'https://play.google.com/store/apps/details?id=de.kaleidox.animalmusix')">
+                <img class="projecticon" src="img/projects/vban-api.png" alt="VBAN Java API" title="VBAN Java API"
+                     onclick="changemajor('VBAN Java API', 'https://github.com/burdoto/VBAN-API')">
+                <img class="projecticon" src="img/projects/vbandeck.png" alt="VBANDeck" title="VBANDeck"
+                     onclick="changemajor('VBANDeck', 'https://github.com/burdoto/VBAN-StreamDeck-Plugin')">
             </div>
         </div>
     </div>
