@@ -21,11 +21,7 @@ function changemajor(changeto, url) {
         var urlVisual = document.getElementById("url");
 
         redirect = url;
-        if (url != null) {
-            urlVisual.style.cursor = "pointer"
-        } else {
-            urlVisual.style.cursor = "default"
-        }
+        urlVisual.style.cursor = url != null ? "pointer" : "default";
         urlVisual.textContent = changeto;
         urlVisual.style.color = "#8ec6d3";
         urlVisual.style.textShadow = "#67909C";
@@ -60,7 +56,7 @@ function pageLoad() {
             changemajor("PSN: kaleidox_", "https://my.playstation.com/profile/kaleidox_");
             break;
         default:
-            changemajor("www.kaleidox.de", null);
+            changemajor("www.kaleidox.de", "http://www.kaleidox.de");
             break;
     }
 
