@@ -3,28 +3,41 @@ body {
 }
 
 .center {
-    display: table;
+    display: flex;
     margin: 0 auto 0;
 }
 
-.box {
+.widebox {
+    width: 100%;
     background: #00274f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #001937;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    justify-content: center;
+    background: #00274f;
+    border: 1px solid #001937;
     border-radius: 20px;
     padding: 10px;
 }
 
 .boxedicon {
     cursor: pointer;
-    margin: 6px 3px 3px 6px;
+    margin: 20px;
     max-height: 42px;
     max-width: 42px;
 }
 
 .boxedicon:hover {
     background: #003366;
-    margin: 4px 1px 1px 4px;
-    padding: 2px;
-    border-radius: 2px;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 6px;
 }
 
 #url {
@@ -36,5 +49,6 @@ body {
 }
 
 #icons {
-    margin-top: 7%;
+    display: table;
+    margin: 5% auto auto auto;
 }
