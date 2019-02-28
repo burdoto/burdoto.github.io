@@ -34,6 +34,7 @@ body {
     border-radius: 6px;
     max-height: 42px;
     max-width: 42px;
+    transition-duration: 0.2;
 }
 
 .profileicon:hover {
@@ -41,6 +42,7 @@ body {
     margin: 8px;
     padding: 12px;
     border-radius: 6px;
+    transition-duration: 0.2;
 }
 
 .projecticon {
@@ -51,6 +53,7 @@ body {
     border-radius: 4px;
     max-height: 30px;
     max-width: 30px;
+    transition-duration: 0.2;
 }
 
 .projecticon:hover {
@@ -58,6 +61,7 @@ body {
     margin: 5px;
     padding: 8px;
     border-radius: 4px;
+    transition-duration: 0.2;
 }
 
 #url {
