@@ -1,30 +1,130 @@
-var urlVisual = document.getElementById("url");
+var linkInf = {
+    "main": ["kaleidox.de", "http://www.kaleidox.de"],
+    "github": [],
+    "twitter": [],
+    "instagram": [],
+    "discord": [],
+    "youtube": [],
+    "youtubegaming": ["live"],
+    "twitch": [],
+    "snapchat": ["Snapchat: kaleidox_", null, true],
+    "steam": [],
+    "battlenet": ["Battle.net: kaleidox#2817", null],
+    "leagueoflegends": ["League of Legends: WerWaeschtMich82", null],
+    "playstationnetwork": ["PSN: kaleidox_", "http://psn.kaleidox.de"],
+
+    "animalmusix": ["AnimalMusix", "https://play.google.com/store/apps/details?id=de.kaleidox.animalmusix"],
+    "vbanapi": ["VBAN-API", "https://github.com/burdoto/VBAN-API"],
+    "vbandeck": ["VBANDeck", "https://github.com/burdoto/VBAN-StreamDeck-Plugin"],
+    "crystalshard": ["CrystalShard", "https://github.com/CrystalShardDiscord/CrystalShard"]
+};
+
 var redirect = null;
 var lastIdent = null;
+var init = false;
 
-function changeurl(ident) {
-    if (lastIdent !== ident) {
-        redirect = "http://" + ident + ".kaleidox.de/";
+function select(name) {
+    name = name.toLowerCase();
+    var use = null;
 
-        urlVisual.style.cursor = "pointer";
-        urlVisual.textContent = ident + ".kaleidox.de";
-        urlVisual.style.color = "#8ec6d3";
-        urlVisual.style.textShadow = "#67909C";
+    // noinspection FallThroughInSwitchStatementJS
+    switch (name) {
+        case "snapchat":
+            init = true;
+        case "main":
+        case "github":
+        case "twitter":
+        case "youtube":
+        case "youtubegaming":
+        case "twitch":
+        case "discord":
+        case "steam":
+        case "instagram":
+        case "leagueoflegends":
+        case "battlenet":
+        case "playstationnetwork":
+        case "animalmusix":
+        case "vbanapi":
+        case "vbandeck":
+        case "crystalshard":
+            use = name;
+            break;
+        case "lol":
+            use = "leagueoflegends";
+            break;
+        case "psn":
+        case "playstation":
+        case "ps4":
+            use = "playstationnetwork";
+            break;
+        case "vban-api":
+            use = "vbanapi";
+            break;
+        case "live":
+            use = "youtubegaming";
+            break;
+        default:
+            use = "main";
+            break;
+    }
 
-        lastIdent = ident;
-    } else xredirect()
+    if (use != null) changeFor(use);
 }
 
-function changemajor(changeto, url) {
-    if (lastIdent !== changeto) {
+function changeFor(ident) {
+    var inf = linkInf[ident];
+
+    var frag = null, changeto = null, url = null;
+    var useImg = false;
+
+    // noinspection FallThroughInSwitchStatementJS
+    switch (inf.length) {
+        case 0:
+            frag = ident;
+            break;
+        case 1:
+            frag = inf[0];
+            break;
+        case 3:
+            useImg = inf[2];
+        case 2:
+            changeto = inf[0];
+            url = inf[1];
+            break;
+    }
+
+    if ((frag != null && lastIdent === frag)
+        || (changeto != null && lastIdent === changeto)) xredirect();
+
+    var urlVisual = document.getElementById("url");
+
+    if (frag != null) {
+        redirect = "http://" + frag + ".kaleidox.de/";
+
+        urlVisual.style.cursor = "pointer";
+        urlVisual.textContent = frag + ".kaleidox.de";
+
+        lastIdent = frag;
+    } else if (changeto != null) {
         redirect = url;
         urlVisual.style.cursor = url != null ? "pointer" : "default";
         urlVisual.textContent = changeto;
-        urlVisual.style.color = "#8ec6d3";
-        urlVisual.style.textShadow = "#67909C";
 
         lastIdent = changeto;
     } else xredirect();
+
+    if (init) {
+        if (useImg) $("#qrimage").slideDown("slow");
+        else $("#qrimage").slideUp("slow");
+    } else init = true;
+
+    urlVisual.style.color = "#8ec6d3";
+    urlVisual.style.textShadow = "#67909C";
+}
+
+function xImg(useImg) {
+    if (useImg) $("#qrimage").slideDown("slow");
+    else $("#qrimage").slideUp("slow");
 }
 
 function xredirect() {
@@ -36,29 +136,5 @@ function xredirect() {
 function pageLoad() {
     var frag = window.location.hash.substr(1);
 
-    switch (frag.toLowerCase()) {
-        case "github":
-        case "twitter":
-        case "discord":
-        case "steam":
-        case "instagram":
-            changeurl(frag.toLowerCase());
-            break;
-        case "snapchat":
-            changemajor("Snapchat: kaleidox_", null);
-            break;
-        case "leagueoflegends":
-        case "lol":
-            changemajor('League of Legends: WerWaeschtMich82', null);
-            break;
-        case "psn":
-        case "playstation":
-        case "ps4":
-            changemajor("PSN: kaleidox_", "https://my.playstation.com/profile/kaleidox_");
-            break;
-        default:
-            changemajor("www.kaleidox.de", "http://www.kaleidox.de");
-            break;
-    }
-
+    select(frag);
 }

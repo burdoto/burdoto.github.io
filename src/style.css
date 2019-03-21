@@ -4,7 +4,8 @@ body {
 }
 
 .center {
-    margin: auto;
+    display: table;
+    margin: auto auto auto auto;
 }
 
 .widebox {
@@ -70,7 +71,6 @@ body {
 
 #profiles {
     display: table;
-    margin: 5% auto auto auto;
 }
 
 #projects {

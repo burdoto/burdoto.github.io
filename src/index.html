@@ -10,52 +10,58 @@
     <title>kaleidox.de</title>
 </head>
 <body onload="pageLoad()">
-<div style="margin: 8% auto auto">
-    <div class="widebox" id="url" onclick="xredirect()" title="Hint: Doubleclicking an icon redirects the page!">
+<div style="margin: 4% auto auto auto">
+    <div class="widebox" id="url" onclick="xredirect()"
+         title="Hint: Doubleclicking an icon redirects to the page!">
         www.kaleidox.de
     </div>
     <br/>
-    <div id="profiles" title="Social Media Profiles">
+    <div id="profiles" style="margin: 1.5% auto auto auto;" title="Social Media Profiles">
         <div class="box">
             <div class="center">
-                <img class="profileicon" src="img/socialmedia/github.png" alt="GitHub" title="GitHub"
-                     onclick="changeurl('github')">
-                <img class="profileicon" src="img/socialmedia/twitter.png" alt="Twitter" title="Twitter"
-                     onclick="changeurl('twitter')">
-                <img class="profileicon" src="img/socialmedia/instagram.png" alt="Instagram" title="Instagram"
-                     onclick="changeurl('instagram')">
-                <img class="profileicon" src="img/socialmedia/discord.png" alt="Discord" title="Discord"
-                     onclick="changeurl('discord')">
-                <img class="profileicon" src="img/socialmedia/youtube.png" alt="YouTube" title="YouTube"
-                     onclick="changeurl('youtube')">
-                <img class="profileicon" src="img/socialmedia/youtube-gaming.png" alt="Livestream" title="Livestream"
-                     onclick="changeurl('live')">
-                <img class="profileicon" src="img/socialmedia/twitch.png" alt="Twitch" title="Twitch"
-                     onclick="changeurl('twitch')">
-                <img class="profileicon" src="img/socialmedia/snapchat.png" alt="Snapchat" title="Snapchat"
-                     onclick="changemajor('Snapchat: kaleidox_', null)">
+                <img class="profileicon" src="img/socialmedia/github.png" alt="GitHub"
+                     title="GitHub" onclick="select('github')">
+                <img class="profileicon" src="img/socialmedia/twitter.png" alt="Twitter"
+                     title="Twitter" onclick="select('twitter')">
+                <img class="profileicon" src="img/socialmedia/instagram.png" alt="Instagram"
+                     title="Instagram" onclick="select('instagram')">
+                <img class="profileicon" src="img/socialmedia/discord.png" alt="Discord"
+                     title="Discord" onclick="select('discord')">
+                <img class="profileicon" src="img/socialmedia/youtube.png" alt="YouTube"
+                     title="YouTube" onclick="select('youtube')">
+                <img class="profileicon" src="img/socialmedia/youtube-gaming.png" alt="Livestream"
+                     title="Livestream" onclick="select('youtubegaming')">
+                <img class="profileicon" src="img/socialmedia/twitch.png" alt="Twitch"
+                     title="Twitch" onclick="select('twitch')">
+                <img class="profileicon" src="img/socialmedia/snapchat.png" alt="Snapchat"
+                     title="Snapchat" onclick="select('snapchat')">
                 <img class="profileicon" src="img/socialmedia/steam.ico" alt="Steam" title="Steam"
-                     onclick="changeurl('steam')">
-                <img class="profileicon" src="img/socialmedia/battlenet.png" alt="Battle.net" title="Battle.net"
-                     onclick="changemajor('Battle.net: kaleidox#2817', null)">
-                <img class="profileicon" src="img/socialmedia/leagueoflegends.png" alt="League of Legends"
-                     title="League of Legends" onclick="changemajor('League of Legends: WerWaeschtMich82', null)">
-                <img class="profileicon" src="img/socialmedia/playstation.png" alt="PlayStation Network"
-                     title="PlayStation Network" onclick="changemajor('PSN: kaleidox_', 'http://psn.kaleidox.de')">
+                     onclick="select('steam')">
+                <img class="profileicon" src="img/socialmedia/battlenet.png" alt="Battle.net"
+                     title="Battle.net" onclick="select('battlenet')">
+                <img class="profileicon" src="img/socialmedia/leagueoflegends.png"
+                     alt="League of Legends" title="League of Legends"
+                     onclick="select('leagueoflegends')">
+                <img class="profileicon" src="img/socialmedia/playstation.png"
+                     alt="PlayStation Network" title="PlayStation Network"
+                     onclick="select('playstationnetwork')">
             </div>
         </div>
     </div>
-    <div id="projects" style="margin: 2% auto auto" title="Projects">
+    <div id="projects" style="margin: 1.5% auto auto auto" title="Projects">
         <div class="box">
             <div class="center">
-                <img class="projecticon" src="img/projects/animal-musix.png" alt="AnimalMusix" title="AnimalMusix"
-                     onclick="changemajor('AnimalMusix', 'https://play.google.com/store/apps/details?id=de.kaleidox.animalmusix')">
-                <img class="projecticon" src="img/projects/vban-api.png" alt="VBAN Java API" title="VBAN Java API"
-                     onclick="changemajor('VBAN Java API', 'https://github.com/burdoto/VBAN-API')">
-                <img class="projecticon" src="img/projects/vbandeck.png" alt="VBANDeck" title="VBANDeck"
-                     onclick="changemajor('VBANDeck', 'https://github.com/burdoto/VBAN-StreamDeck-Plugin')">
-                <img class="projecticon" src="img/projects/crystalshard.png" alt="CrystalShard" title="CrystalShard"
-                     onclick="changemajor('CrystalShard', 'https://github.com/CrystalShardDiscord/CrystalShard')">
+                <img class="projecticon" src="img/projects/animal-musix.png" alt="AnimalMusix"
+                     title="AnimalMusix" onclick="select('animalmusix')">
+                <img class="projecticon" src="img/projects/vban-api.png" alt="VBAN Java API"
+                     title="VBAN Java API" onclick="select('vbanapi')">
+                <img class="projecticon" src="img/projects/vbandeck.png" alt="VBANDeck"
+                     title="VBANDeck" onclick="select('vbandeck')">
+                <img class="projecticon" src="img/projects/crystalshard.png" alt="CrystalShard"
+                     title="CrystalShard" onclick="select('crystalshard')">
+            </div>
+        </div>
+    </div>
             </div>
         </div>
     </div>
