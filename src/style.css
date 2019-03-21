@@ -79,11 +79,12 @@ body {
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 99%;
     color: #003366;
     background: #00274f;
+    cursor: default;
     padding-top: 3px;
     border-style: solid;
     border-color: #001937;
