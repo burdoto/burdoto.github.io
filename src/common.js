@@ -7,7 +7,7 @@ var linkInf = {
     "youtube": [],
     "youtubegaming": ["live"],
     "twitch": [],
-    "snapchat": ["Snapchat: kaleidox_", null, true],
+    "snapchat": ["Snapchat: kaleidox_", null, "img/socialmedia/snapchat-qr.png"],
     "steam": [],
     "battlenet": ["Battle.net: kaleidox#2817", null],
     "leagueoflegends": ["League of Legends: WerWaeschtMich82", null],
@@ -74,8 +74,7 @@ function select(name) {
 function changeFor(ident) {
     var inf = linkInf[ident];
 
-    var frag = null, changeto = null, url = null;
-    var useImg = false;
+    var frag = null, changeto = null, url = null, useImg = null;
 
     // noinspection FallThroughInSwitchStatementJS
     switch (inf.length) {
@@ -114,7 +113,10 @@ function changeFor(ident) {
     } else xredirect();
 
     if (init) {
-        if (useImg) $("#qrimage").slideDown("slow");
+        if (useImg != null) {
+            document.getElementById("qr-container").src = useImg;
+            $("#qrimage").slideDown("slow");
+        }
         else $("#qrimage").slideUp("slow");
     } else init = true;
 
