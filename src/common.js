@@ -1,5 +1,5 @@
 var linkInf = {
-    "main": ["kaleidox.de", "http://www.kaleidox.de"],
+    "main": ["www.kaleidox.de", "http://www.kaleidox.de"],
     "github": [],
     "twitter": [],
     "instagram": [],
