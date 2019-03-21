@@ -1,10 +1,9 @@
+var urlVisual = document.getElementById("url");
 var redirect = null;
 var lastIdent = null;
 
 function changeurl(ident) {
     if (lastIdent !== ident) {
-        var urlVisual = document.getElementById("url");
-
         redirect = "http://" + ident + ".kaleidox.de/";
 
         urlVisual.style.cursor = "pointer";
@@ -18,8 +17,6 @@ function changeurl(ident) {
 
 function changemajor(changeto, url) {
     if (lastIdent !== changeto) {
-        var urlVisual = document.getElementById("url");
-
         redirect = url;
         urlVisual.style.cursor = url != null ? "pointer" : "default";
         urlVisual.textContent = changeto;
