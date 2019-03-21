@@ -35,6 +35,11 @@ body {
     border-radius: 6px;
     max-height: 42px;
     max-width: 42px;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
 }
 
 .profileicon:hover {
@@ -42,6 +47,11 @@ body {
     margin: 8px;
     padding: 12px;
     border-radius: 6px;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
 }
 
 .projecticon {
@@ -52,6 +62,11 @@ body {
     border-radius: 4px;
     max-height: 30px;
     max-width: 30px;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
 }
 
 .projecticon:hover {
@@ -59,6 +74,11 @@ body {
     margin: 5px;
     padding: 8px;
     border-radius: 4px;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
 }
 
 .preload {
