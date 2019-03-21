@@ -44,6 +44,12 @@ body {
     border-radius: 6px;
 }
 
+.qrcode {
+    border-radius: 10px;
+    max-height: 360px;
+    max-width: 360px;
+}
+
 .projecticon {
     cursor: pointer;
     background: #00274f;
@@ -69,13 +75,16 @@ body {
     font-size: 72px;
 }
 
+#qrimage {
+    display: none;
+}
+
 #profiles {
     display: table;
 }
 
 #projects {
     display: table;
-    margin: 5% auto auto auto;
 }
 
 #footer {
