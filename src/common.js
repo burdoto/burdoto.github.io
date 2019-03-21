@@ -2,7 +2,7 @@ var linkInf = {
     "main": ["www.kaleidox.de", "http://www.kaleidox.de"],
     "github": [],
     "twitter": [],
-    "instagram": [],
+    "instagram": ["instagram.kaleidox.de", "http://instagram.kaleidox.de", "img/socialmedia/instagram-qr.png"],
     "discord": [],
     "youtube": [],
     "youtubegaming": ["live"],

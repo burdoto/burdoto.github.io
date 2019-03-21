@@ -67,6 +67,10 @@ body {
     border-radius: 4px;
 }
 
+.preload {
+    display: none;
+}
+
 #url {
     color: #8ec6d3;
     cursor: default;
