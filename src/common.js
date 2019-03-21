@@ -1,8 +1,8 @@
 var redirect = null;
-var changeident = null;
+var lastIdent = null;
 
 function changeurl(ident) {
-    if (changeident !== ident) {
+    if (lastIdent !== ident) {
         var urlVisual = document.getElementById("url");
 
         redirect = "http://" + ident + ".kaleidox.de/";
@@ -12,12 +12,12 @@ function changeurl(ident) {
         urlVisual.style.color = "#8ec6d3";
         urlVisual.style.textShadow = "#67909C";
 
-        changeident = ident;
+        lastIdent = ident;
     } else xredirect()
 }
 
 function changemajor(changeto, url) {
-    if (changeident !== changeto) {
+    if (lastIdent !== changeto) {
         var urlVisual = document.getElementById("url");
 
         redirect = url;
@@ -26,7 +26,7 @@ function changemajor(changeto, url) {
         urlVisual.style.color = "#8ec6d3";
         urlVisual.style.textShadow = "#67909C";
 
-        changeident = changeto;
+        lastIdent = changeto;
     } else xredirect();
 }
 
