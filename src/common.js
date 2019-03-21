@@ -122,11 +122,6 @@ function changeFor(ident) {
     urlVisual.style.textShadow = "#67909C";
 }
 
-function xImg(useImg) {
-    if (useImg) $("#qrimage").slideDown("slow");
-    else $("#qrimage").slideUp("slow");
-}
-
 function xredirect() {
     if (redirect != null) {
         window.location.href = redirect;
