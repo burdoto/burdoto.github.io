@@ -50,6 +50,10 @@ function pageLoad() {
         case "snapchat":
             changemajor("Snapchat: kaleidox_", null);
             break;
+        case "leagueoflegends":
+        case "lol":
+            changemajor('League of Legends: WerWaeschtMich82', null);
+            break;
         case "psn":
         case "playstation":
         case "ps4":
