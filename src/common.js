@@ -1,5 +1,5 @@
 var linkInf = {
-    "main": ["www.kaleidox.de", "http://www.kaleidox.de"],
+    "main": ["Discord: Kaleidox#0001", "http://www.kaleidox.de"],
     "github": [],
     "twitter": [],
     "instagram": ["instagram.kaleidox.de", "http://instagram.kaleidox.de", "img/socialmedia/instagram-qr.png"],
