@@ -1,9 +1,9 @@
 var linkInf = {
-    "main": ["Discord: Kaleidox#0001", "http://www.kaleidox.de"],
+    "main": ["www.kaleidox.de", "http://www.kaleidox.de"],
     "github": [],
     "twitter": [],
     "instagram": ["instagram.kaleidox.de", "http://instagram.kaleidox.de", "img/socialmedia/instagram-qr.png"],
-    "discord": [],
+    "discord": ["Discord: Kaleidox#0001", "http://discord.kaleidox.de"],
     "youtube": [],
     "youtubegaming": ["live"],
     "twitch": [],
