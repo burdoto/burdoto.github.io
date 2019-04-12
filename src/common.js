@@ -13,6 +13,7 @@ var linkInf = {
     "leagueoflegends": ["League of Legends: WerWaeschtMich82", null],
     "playstationnetwork": ["PSN: kaleidox_", "http://psn.kaleidox.de"],
 
+    "dangobot": ["DangoBot", "https://discordbots.org/bot/487745829617139722"],
     "animalmusix": ["AnimalMusix", "https://play.google.com/store/apps/details?id=de.kaleidox.animalmusix"],
     "vbanapi": ["VBAN-API", "https://github.com/burdoto/VBAN-API"],
     "vbandeck": ["VBANDeck", "https://github.com/burdoto/VBAN-StreamDeck-Plugin"],
@@ -43,6 +44,7 @@ function select(name) {
         case "leagueoflegends":
         case "battlenet":
         case "playstationnetwork":
+        case "dangobot":
         case "animalmusix":
         case "vbanapi":
         case "vbandeck":
