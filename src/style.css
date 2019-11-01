@@ -97,6 +97,10 @@ body {
     display: table;
 }
 
+#secondary {
+    display: table;
+}
+
 #projects {
     display: table;
 }

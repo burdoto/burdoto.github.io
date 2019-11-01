@@ -2,22 +2,15 @@ var linkInf = {
     "main": ["www.kaleidox.de", "http://www.kaleidox.de"],
     "github": [],
     "twitter": [],
-    "instagram": ["instagram.kaleidox.de", "http://instagram.kaleidox.de", "img/socialmedia/instagram-qr.png"],
     "discord": ["Discord: Kaleidox#0001", "http://discord.kaleidox.de"],
-    "youtube": [],
-    "youtubegaming": ["live"],
-    "twitch": [],
-    "snapchat": ["Snapchat: kaleidox_", null, "img/socialmedia/snapchat-qr.png"],
     "steam": [],
     "battlenet": ["Battle.net: kaleidox#2817", null],
     "leagueoflegends": ["League of Legends: WerWaeschtMich82", null],
     "playstationnetwork": ["PSN: kaleidox_", "http://psn.kaleidox.de"],
 
-    "dangobot": ["DangoBot", "https://discordbots.org/bot/487745829617139722"],
-    "animalmusix": ["AnimalMusix", "https://play.google.com/store/apps/details?id=de.kaleidox.animalmusix"],
     "vbanapi": ["VBAN-API", "https://github.com/burdoto/VBAN-API"],
     "vbandeck": ["VBANDeck", "https://github.com/burdoto/VBAN-StreamDeck-Plugin"],
-    "crystalshard": ["CrystalShard", "https://github.com/CrystalShardDiscord/CrystalShard"]
+    "crystalshard": ["CrystalShard", "https://github.com/comroid-git/CrystalShard"]
 };
 
 var redirect = null;
