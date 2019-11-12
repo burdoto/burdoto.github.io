@@ -18,101 +18,43 @@ body {
     text-align: center;
 }
 
-.box {
-    display: inline-block;
-    justify-content: center;
-    background: #00274f;
-    border: 1px solid #001937;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.profileicon {
-    cursor: pointer;
-    background: #00274f;
-    margin: 8px;
-    padding: 12px;
-    border-radius: 6px;
-    max-height: 42px;
-    max-width: 42px;
-    -webkit-transition-duration: 300ms;
-    -moz-transition-duration: 300ms;
-    -ms-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
-    transition-duration: 300ms;
-}
-
-.profileicon:hover {
-    background: #003366;
-    margin: 8px;
-    padding: 12px;
-    border-radius: 6px;
-    -webkit-transition-duration: 300ms;
-    -moz-transition-duration: 300ms;
-    -ms-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
-    transition-duration: 300ms;
-}
-
-.projecticon {
-    cursor: pointer;
-    background: #00274f;
-    margin: 5px;
-    padding: 8px;
-    border-radius: 4px;
-    max-height: 30px;
-    max-width: 30px;
-    -webkit-transition-duration: 300ms;
-    -moz-transition-duration: 300ms;
-    -ms-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
-    transition-duration: 300ms;
-}
-
-.projecticon:hover {
-    background: #003366;
-    margin: 5px;
-    padding: 8px;
-    border-radius: 4px;
-    -webkit-transition-duration: 300ms;
-    -moz-transition-duration: 300ms;
-    -ms-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
-    transition-duration: 300ms;
-}
-
-.preload {
-    display: none;
-}
-
-#url {
+#error {
     color: #8ec6d3;
     cursor: default;
     text-shadow: #67909C;
     font-family: 'Fira Mono', monospace;
-    font-size: 72px;
+    font-size: 94px;
 }
 
-#profiles {
-    display: table;
+#info {
+    color: #8ec6d3;
+    cursor: default;
+    text-shadow: #67909C;
+    font-family: 'Fira Mono', monospace;
+    font-size: 48px;
 }
 
-#secondary {
-    display: table;
+#mini_info {
+    color: #8ec6d3;
+    cursor: default;
+    text-shadow: #67909C;
+    font-family: 'Fira Mono', monospace;
+    font-size: 24px;
 }
 
-#projects {
-    display: table;
+a {
+    color: #8ec6d3;
+    text-shadow: #67909C;
 }
 
-#qrimage {
-    display: none;
+a:visited {
+    color: #8ec6d3;
+    text-shadow: #67909C;
 }
 
-#qr-container {
-    border-radius: 10px;
-    max-height: 360px;
-    max-width: 360px;
+a:hover {
+    color: #8ec6d3;
+    text-shadow: #67909C;
 }
 
 #footer {

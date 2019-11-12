@@ -2,80 +2,48 @@
 <head>
     <meta charset="utf-8"/>
 
-    <meta name="author" content="Tobias Burdow">
-    <meta name="publisher" content="Tobias Burdow">
-    <meta name="description" content="Homepage of Kaleidox / burdoto">
-    <meta name="keywords" content="burdoto, kaleidox">
-    <meta name="page-type" content="Link-Liste">
-    <meta name="robots" content="index, follow">
+    <meta name="author" content="Tobias Burdow"/>
+    <meta name="publisher" content="comroid"/>
+    <meta name="description" content="Making Software. Simply."/>
+    <meta name="keywords" content="comroid, software"/>
+    <meta name="page-type" content="Link-Liste"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="twitter:image:src" content="https://comroid.de/img/comroidtm.png"/>
+    <meta name="twitter:site" content="@comroid_de"/>
+    <meta name="twitter:creator" content="@Kaleidox_"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="comroid"/>
+    <meta name="twitter:description" content="Making Software. Simply."/>
+    <meta property="og:image" content="https://comroid.de/img/comroidtm.png"/>
+    <meta property="og:site_name" content="comroid"/>
+    <meta property="og:type" content="link-list"/>
+    <meta property="og:title" content="comroid"/>
+    <meta property="og:url" content="https://comroid.de"/>
+    <meta property="og:description" content="Making Software. Simply."/>
 
-    <link href="img/controller.gif" rel="icon">
+    <link href="img/comroid.png" rel="icon">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="common.js"></script>
 
-    <title>kaleidox.de</title>
+    <title>comroid</title>
 </head>
-<body onload="pageLoad()">
+<body onload="load()">
 <div style="margin: 4% auto auto auto">
-    <div class="widebox" id="url" onclick="xredirect()"
-         title="Hint: Doubleclicking an icon redirects to the page!">
-        www.kaleidox.de
-    </div>
+    <div class="widebox" id="error" title="Under Construction">Under Construction</div>
     <br/>
-    <div id="profiles" style="margin: 1.5% auto auto auto;" title="Social Media Profiles">
-        <div class="box">
-            <div class="center">
-                <img class="profileicon" src="img/socialmedia/github.png" alt="GitHub"
-                     title="GitHub" onclick="select('github')">
-                <img class="profileicon" src="img/socialmedia/twitter.png" alt="Twitter"
-                     title="Twitter" onclick="select('twitter')">
-                <img class="profileicon" src="img/socialmedia/discord.png" alt="Discord"
-                     title="Discord" onclick="select('discord')">
-            </div>
+    <div class="center">
+        <div id="info" style="margin: 1.5% auto auto auto;" title="This page is under construction.">
+            This page is under construction.
         </div>
     </div>
-    <div id="secondary" style="margin: 1.5% auto auto auto" title="Projects">
-        <div class="box">
-            <div class="center">
-                <img class="projecticon" src="img/socialmedia/steam.ico" alt="Steam" title="Steam"
-                     onclick="select('steam')">
-                <img class="projecticon" src="img/socialmedia/battlenet.png" alt="Battle.net"
-                     title="Battle.net" onclick="select('battlenet')">
-                <img class="projecticon" src="img/socialmedia/leagueoflegends.png"
-                     alt="League of Legends" title="League of Legends"
-                     onclick="select('leagueoflegends')">
-                <img class="projecticon" src="img/socialmedia/playstation.png"
-                     alt="PlayStation Network" title="PlayStation Network"
-                     onclick="select('playstationnetwork')">
-            </div>
+    <div class="center">
+        <div id="mini_info" style="margin: 1.5% auto auto auto;" title="This page is under construction.">
+            You can join our Discord Guild meanwhile: <a href="https://discordapp.com/invite/fQCmgwJ">discord.comroid.de</a>
         </div>
     </div>
-    <div id="projects" style="margin: 1.5% auto auto auto" title="Projects">
-        <div class="box">
-            <div class="center">
-                <img class="projecticon" src="img/projects/vban-api.png" alt="VBAN Java API"
-                     title="VBAN Java API" onclick="select('vbanapi')">
-                <img class="projecticon" src="img/projects/crystalshard.png" alt="CrystalShard"
-                     title="CrystalShard" onclick="select('crystalshard')">
-            </div>
-        </div>
-    </div>
-    <div class="center" style="margin: 1.5% auto auto auto;">
-        <div id="qrimage">
-            <div class="box">
-                <div class="center">
-                    <!-- Placeholder image until it gets actually used. -->
-                    <img id="qr-container" src="img/controller.gif" alt="QR Code">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="margin: auto auto 2% auto;"></div>
 </div>
-<div id="footer">kaleidox.de&nbsp;|&nbsp;burdoto@outlook.com (Business inquiries only)</div>
-
-<!-- Unrendered QRCode images for preloading -->
+<div id="footer">comroid.de&nbsp;|&nbsp;webmaster@comroid.de (Business inquiries only)</div>
 </body>
