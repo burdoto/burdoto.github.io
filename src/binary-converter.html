@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+
+    <link href="img/comroid.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+    <script type="application/javascript">
+        function textChange() {
+            const textIO = document.getElementById('text-io');
+            const binaryIO = document.getElementById('binary-io');
+
+            const text = textIO.value;
+            binaryIO.value = '';
+
+            for (var i = 0; i < text.length; i++) {
+                const char = text.charCodeAt(i);
+
+                binaryIO.value += trimString(8, '0', char.toString(2));
+                binaryIO.value += ' ';
+            }
+        }
+
+        function binaryChange() {
+            const textIO = document.getElementById('text-io');
+            const binaryIO = document.getElementById('binary-io');
+
+            const text = binaryIO.value;
+            binaryError(text.match("[01 ]*"));
+
+            for (var binaryChar in text.split(" ")) {
+                textIO.value += String.fromCharCode(binaryChar); // todo
+            }
+        }
+
+        function binaryError(bool) {
+            const binaryIO = document.getElementById('binary-io');
+
+            if (bool) {
+                binaryIO.style.color = '#C41626';
+            } else {
+                binaryIO.style.color = '#8ec6d3';
+            }
+        }
+
+        function trimString(length, filler, string) {
+            if (string.length === length) {
+                return string;
+            }
+
+            if (string.length < length) {
+                var fill = '';
+                for (var c = 0; c < length - string.length; c++) {
+                    fill += filler
+                }
+
+                return fill + string;
+            }
+
+            if (string.length > length) {
+                return string.substring(0, length);
+            }
+        }
+    </script>
+
+    <title>kaleidox.de</title>
+</head>
+<body>
+<div style="margin: 4% auto auto auto">
+    <div id="widebox" class="wide_textbox" title="Under Construction">Text --> Binary</div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="center">
+        <label for="text-io">Text:</label><br/>
+        <textarea id="text-io" class="wide_textbox" placeholder="Text goes here..." oninput="textChange()"></textarea>
+    </div>
+    <br/>
+    <div class="center">
+        <label for="binary-io">Binary:</label><br/>
+        <textarea id="binary-io" class="wide_textbox" placeholder="Binary goes here..." oninput="binaryChange()"></textarea>
+    </div>
+</div>
+<div id="footer">kaleidox.de&nbsp;|&nbsp;contact@kaleidox.de (Business inquiries only)</div>
+</body>
