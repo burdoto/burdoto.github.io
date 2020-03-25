@@ -6,6 +6,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
 
+    <script async charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
     <script type="application/javascript">
         function textChange() {
             const textIO = document.getElementById('text-io');
@@ -32,6 +33,10 @@
             for (var binaryChar in text.split(" ")) {
                 textIO.value += String.fromCharCode(binaryChar); // todo
             }
+
+            document.getElementById('share-binary-button')
+                .attributes.getNamedItem('data-text')
+                .value = textIO.value;
         }
 
         function binaryError(bool) {
@@ -68,18 +73,28 @@
 </head>
 <body>
 <div style="margin: 4% auto auto auto">
-    <div id="widebox" class="wide_textbox" title="Under Construction">Text --> Binary</div>
+    <div class="wide_textbox" id="widebox" title="Under Construction">Text --> Binary</div>
     <br/>
     <br/>
     <br/>
     <div class="center">
         <label for="text-io">Text:</label><br/>
-        <textarea id="text-io" class="wide_textbox" placeholder="Text goes here..." oninput="textChange()"></textarea>
+        <textarea class="wide_textbox" id="text-io" oninput="textChange()"
+                  placeholder="Text goes here..."></textarea>
     </div>
     <br/>
     <div class="center">
         <label for="binary-io">Binary:</label><br/>
-        <textarea id="binary-io" class="wide_textbox" placeholder="Binary goes here..." oninput="binaryChange()"></textarea>
+        <textarea class="wide_textbox" id="binary-io" oninput="binaryChange()"
+                  placeholder="Binary goes here..."></textarea>
+        <div id="share-binary">
+            <a class="twitter-hashtag-button" data-show-count="false"
+               data-size="large" data-text="if you see this, something went wrong :("
+               data-url="https://kaleidox.de/binary-converter.html"
+               href="https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw"
+               id="share-binary-button">
+                Tweet Binary Code</a>
+        </div>
     </div>
 </div>
 <div id="footer">kaleidox.de&nbsp;|&nbsp;contact@kaleidox.de (Business inquiries only)</div>
